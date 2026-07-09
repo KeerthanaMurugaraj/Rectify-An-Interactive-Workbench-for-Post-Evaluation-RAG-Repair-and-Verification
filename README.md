@@ -99,6 +99,44 @@ Each repair slice produces a repair card with:
 **7 prompt modes:** `normal` · `grounded` · `citation_only` · `multi_step` · `structured_output` · `abstain_aware` · `explicit_citation`
 
 ---
+---
+
+## Project Structure
+
+```
+streamlit_app.py        ← main app (6 tabs + sidebar docs)
+capture.py              ← @capture.trace decorator + RAGCapture.export()
+evaluate.py             ← RAGVue evaluation runner
+repair/
+  loader.py             ← load RAGVue eval output + proxy metric derivation
+  clustering.py         ← two-layer routing (family → slice) + gold-answer pre-filter
+  models.py             ← all shared data models (Pydantic v2)
+  root_cause.py         ← deterministic root cause per slice
+  repair_planner.py     ← repair card templates (23 slices) + compound repair cards
+  report.py             ← HTML report generator (diagnosis + repair cards + deltas)
+  adapters.py           ← RAGAS → Rectify field mapping
+  explainer.py          ← LLM explanation agent (optional, requires API key)
+  sandbox_runner.py     ← subset rerun with patched config
+  delta_report.py       ← before/after score delta computation
+  provenance.py         ← audit log → repair_provenance.json
+  ui.py                 ← Repair Lab Streamlit tab
+rag/
+  runner.py             ← baseline RAG pipeline runner (BM25 / dense / hybrid)
+  generator.py          ← Ollama/Mistral answer generator (7 prompt modes)
+  bm25_retriever.py     ← BM25 keyword retriever
+  dense_retriever.py    ← sentence-transformer dense retriever (all-MiniLM-L6-v2)
+  hybrid_retriever.py   ← BM25 + dense hybrid retriever
+  chunker.py            ← document chunker with overlap
+data/
+  corpus.jsonl          ← synthetic document corpus
+  questions_100.jsonl   ← 100 evaluation questions
+evals/
+  eval_run_bm25.json    ← BM25 evaluation results (100 cases)
+  eval_run_dense.json   ← Dense evaluation results (100 cases)
+  eval_run_hybrid.json  ← Hybrid evaluation results (100 cases)
+```
+
+---
 
 ## Optional: LLM Explanations
 
