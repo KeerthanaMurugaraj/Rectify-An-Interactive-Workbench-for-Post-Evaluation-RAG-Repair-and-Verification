@@ -1,0 +1,22 @@
+{
+  "name": "rectify_synthetic_data_pack_v1",
+  "files": [
+    "corpus.jsonl",
+    "questions_100.jsonl",
+    "synthetic_failure_cases_30.jsonl",
+    "dataset_schema.md",
+    "synthetic_corpus_plan_100q.md",
+    "README_for_code_assistant.md"
+  ],
+  "num_documents": 30,
+  "num_questions": 100,
+  "num_synthetic_failure_cases": 30,
+  "question_type_distribution": {
+    "factoid": 25,
+    "multi_part": 20,
+    "multi_hop": 20,
+    "temporal": 15,
+    "comparison": 10,
+    "unanswerable": 10
+  }
+}
