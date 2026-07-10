@@ -1,0 +1,181 @@
+{
+  "card_id": "R5_multipart_und_c",
+  "slice_label": "R5. Multi-part under-retrieval",
+  "family": "retrieval",
+  "ran_at": "2026-07-10T10:22:43.184280+02:00",
+  "summary": {
+    "n_cases": 3,
+    "improved": 1,
+    "unchanged": 2,
+    "regressed": 0,
+    "improvement_rate": 0.333,
+    "before_avg": {
+      "strict_faithfulness": 0.0,
+      "answer_relevance": 0.0,
+      "retrieval_relevance": 0.444,
+      "answer_completeness": 0.0,
+      "context_utilization": 0.0,
+      "coherence": 1.0,
+      "clarity": 0.8
+    },
+    "after_avg": {
+      "strict_faithfulness": 0.25,
+      "answer_relevance": 0.133,
+      "retrieval_relevance": 0.267,
+      "answer_completeness": 0.111,
+      "context_utilization": 0.0,
+      "coherence": 1.0,
+      "clarity": 0.8
+    },
+    "avg_deltas": {
+      "strict_faithfulness": 0.25,
+      "answer_relevance": 0.133,
+      "retrieval_relevance": -0.177,
+      "answer_completeness": 0.111,
+      "context_utilization": 0.0,
+      "coherence": 0.0,
+      "clarity": 0.0
+    }
+  },
+  "cases": [
+    {
+      "case_id": "q_086_bm25",
+      "verdict": "improved",
+      "question": "Which product launched later, RiverLens or DeltaMap?",
+      "before_answer": "I don't know. The context does not provide information about a product named DeltaMap.",
+      "after_answer": "I don't know. The context does not provide the launch date for DeltaMap.",
+      "before_contexts": [
+        "RiverLens launched in 2019. AsterFlow launched in 2020. HarborOS launched in 2015. GridPilot launched in 2016.",
+        "RiverLens is a product developed by NorthRiver Analytics. It launched in 2019. The product is associated with Dublin.",
+        "QuantaForge is a simulation software company headquartered in Stockholm. It was founded in 2015 by Mina S\u00f8rensen. Its flagship product is ForgeSim, which launched in 2018."
+      ],
+      "after_contexts": [
+        "RiverLens is a product developed by NorthRiver Analytics. It launched in 2019. The product is associated with Dublin.",
+        "QuantaForge is a simulation software company headquartered in Stockholm. It was founded in 2015 by Mina S\u00f8rensen. Its flagship product is ForgeSim, which launched in 2018.",
+        "Veridian Robotics is a robotics company headquartered in Zurich. It was founded in 2017 by Naomi Ivers. Its flagship product is VeriArm, which launched in 2020.",
+        "Delta Insight is a geospatial analytics company headquartered in Berlin. It was founded in 2014 by Martin Hale. Its flagship product is DeltaMap, which launched in 2017.",
+        "Asteron Labs is a workflow automation company headquartered in Amsterdam. It was founded in 2018 by Priya Raman. Its flagship product is AsterFlow, which launched in 2020."
+      ],
+      "before_scores": {
+        "strict_faithfulness": 0.0,
+        "answer_relevance": 0.0,
+        "retrieval_relevance": 0.6666666666666666,
+        "answer_completeness": 0.0,
+        "context_utilization": 0.0,
+        "coherence": 1.0,
+        "clarity": 0.8
+      },
+      "after_scores": {
+        "strict_faithfulness": 0.75,
+        "answer_relevance": 0.4,
+        "retrieval_relevance": 0.2,
+        "answer_completeness": 0.3333333333333333,
+        "context_utilization": 0.0,
+        "coherence": 1.0,
+        "clarity": 0.8
+      },
+      "deltas": {
+        "strict_faithfulness": 0.75,
+        "answer_relevance": 0.4,
+        "retrieval_relevance": -0.4667,
+        "answer_completeness": 0.3333,
+        "context_utilization": 0.0,
+        "coherence": 0.0,
+        "clarity": 0.0
+      }
+    },
+    {
+      "case_id": "q_089_bm25",
+      "verdict": "unchanged",
+      "question": "Which product launched later, ForgeSim or SolisCart?",
+      "before_answer": "I don't know. The context does not provide information about a company named \"SolisCart.\"",
+      "after_answer": "I don't know. There is no information provided about a company named \"SolisCart\" in the context.",
+      "before_contexts": [
+        "QuantaForge is a simulation software company headquartered in Stockholm. It was founded in 2015 by Mina S\u00f8rensen. Its flagship product is ForgeSim, which launched in 2018.",
+        "Veridian Robotics is a robotics company headquartered in Zurich. It was founded in 2017 by Naomi Ivers. Its flagship product is VeriArm, which launched in 2020.",
+        "Delta Insight is a geospatial analytics company headquartered in Berlin. It was founded in 2014 by Martin Hale. Its flagship product is DeltaMap, which launched in 2017."
+      ],
+      "after_contexts": [
+        "QuantaForge is a simulation software company headquartered in Stockholm. It was founded in 2015 by Mina S\u00f8rensen. Its flagship product is ForgeSim, which launched in 2018.",
+        "Veridian Robotics is a robotics company headquartered in Zurich. It was founded in 2017 by Naomi Ivers. Its flagship product is VeriArm, which launched in 2020.",
+        "Delta Insight is a geospatial analytics company headquartered in Berlin. It was founded in 2014 by Martin Hale. Its flagship product is DeltaMap, which launched in 2017.",
+        "Asteron Labs is a workflow automation company headquartered in Amsterdam. It was founded in 2018 by Priya Raman. Its flagship product is AsterFlow, which launched in 2020.",
+        "Crescent AI is a language technology company headquartered in Paris. It was founded in 2019 by Lina Haddad. Its flagship product is Crescent Core, which launched in 2021."
+      ],
+      "before_scores": {
+        "strict_faithfulness": 0.0,
+        "answer_relevance": 0.0,
+        "retrieval_relevance": 0.3333333333333333,
+        "answer_completeness": 0.0,
+        "context_utilization": 0.0,
+        "coherence": 1.0,
+        "clarity": 0.8
+      },
+      "after_scores": {
+        "strict_faithfulness": 0.0,
+        "answer_relevance": 0.0,
+        "retrieval_relevance": 0.2,
+        "answer_completeness": 0.0,
+        "context_utilization": 0.0,
+        "coherence": 1.0,
+        "clarity": 0.8
+      },
+      "deltas": {
+        "strict_faithfulness": 0.0,
+        "answer_relevance": 0.0,
+        "retrieval_relevance": -0.1333,
+        "answer_completeness": 0.0,
+        "context_utilization": 0.0,
+        "coherence": 0.0,
+        "clarity": 0.0
+      }
+    },
+    {
+      "case_id": "q_090_bm25",
+      "verdict": "unchanged",
+      "question": "Which product launched later, VeriArm or WillowCare?",
+      "before_answer": "I don't know. The context does not provide information about a company named \"WillowCare.\"",
+      "after_answer": "I don't know. There is no information about a company named \"WillowCare\" in the provided context.",
+      "before_contexts": [
+        "QuantaForge is a simulation software company headquartered in Stockholm. It was founded in 2015 by Mina S\u00f8rensen. Its flagship product is ForgeSim, which launched in 2018.",
+        "Veridian Robotics is a robotics company headquartered in Zurich. It was founded in 2017 by Naomi Ivers. Its flagship product is VeriArm, which launched in 2020.",
+        "Delta Insight is a geospatial analytics company headquartered in Berlin. It was founded in 2014 by Martin Hale. Its flagship product is DeltaMap, which launched in 2017."
+      ],
+      "after_contexts": [
+        "QuantaForge is a simulation software company headquartered in Stockholm. It was founded in 2015 by Mina S\u00f8rensen. Its flagship product is ForgeSim, which launched in 2018.",
+        "Veridian Robotics is a robotics company headquartered in Zurich. It was founded in 2017 by Naomi Ivers. Its flagship product is VeriArm, which launched in 2020.",
+        "Delta Insight is a geospatial analytics company headquartered in Berlin. It was founded in 2014 by Martin Hale. Its flagship product is DeltaMap, which launched in 2017.",
+        "Asteron Labs is a workflow automation company headquartered in Amsterdam. It was founded in 2018 by Priya Raman. Its flagship product is AsterFlow, which launched in 2020.",
+        "Crescent AI is a language technology company headquartered in Paris. It was founded in 2019 by Lina Haddad. Its flagship product is Crescent Core, which launched in 2021."
+      ],
+      "before_scores": {
+        "strict_faithfulness": 0.0,
+        "answer_relevance": 0.0,
+        "retrieval_relevance": 0.3333333333333333,
+        "answer_completeness": 0.0,
+        "context_utilization": 0.0,
+        "coherence": 1.0,
+        "clarity": 0.8
+      },
+      "after_scores": {
+        "strict_faithfulness": 0.0,
+        "answer_relevance": 0.0,
+        "retrieval_relevance": 0.4,
+        "answer_completeness": 0.0,
+        "context_utilization": 0.0,
+        "coherence": 1.0,
+        "clarity": 0.8
+      },
+      "deltas": {
+        "strict_faithfulness": 0.0,
+        "answer_relevance": 0.0,
+        "retrieval_relevance": 0.0667,
+        "answer_completeness": 0.0,
+        "context_utilization": 0.0,
+        "coherence": 0.0,
+        "clarity": 0.0
+      }
+    }
+  ],
+  "eval_file": "eval_run_bm25.json"
+}

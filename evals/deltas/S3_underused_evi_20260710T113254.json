@@ -1,0 +1,87 @@
+{
+  "card_id": "S3_underused_evi",
+  "slice_label": "S3. Underused evidence",
+  "family": "generation",
+  "eval_file": "eval_run_dense.json",
+  "ran_at": "2026-07-10T11:32:54.576657+02:00",
+  "summary": {
+    "n_cases": 1,
+    "improved": 1,
+    "unchanged": 0,
+    "regressed": 0,
+    "improvement_rate": 1.0,
+    "before_avg": {
+      "strict_faithfulness": 0.0,
+      "answer_relevance": 0.4,
+      "retrieval_relevance": 0.667,
+      "answer_completeness": 0.5,
+      "context_utilization": 0.0,
+      "coherence": 1.0,
+      "clarity": 1.0
+    },
+    "after_avg": {
+      "strict_faithfulness": 0.667,
+      "answer_relevance": 0.2,
+      "retrieval_relevance": 0.667,
+      "answer_completeness": 1.0,
+      "context_utilization": 0.25,
+      "coherence": 0.4,
+      "clarity": 0.8
+    },
+    "avg_deltas": {
+      "strict_faithfulness": 0.667,
+      "answer_relevance": -0.2,
+      "retrieval_relevance": 0.0,
+      "answer_completeness": 0.5,
+      "context_utilization": 0.25,
+      "coherence": -0.6,
+      "clarity": -0.2
+    }
+  },
+  "cases": [
+    {
+      "case_id": "q_054_dense",
+      "verdict": "improved",
+      "question": "Which city is the company acquired by Willow Health based in?",
+      "before_answer": "I don't know. The provided context does not mention the city where MedAxis, the company that was acquired by Willow Health, is headquartered.",
+      "after_answer": "1. First, we need to identify the city where Willow Health is headquartered. In chunk [1], it states that Willow Health is headquartered in Brussels.\n\n2. Next, we need to find out where the company acquired by Willow Health was based. In chunk [2], it mentions that MedAxis, the company acquired by Willow Health, was based in Antwerp. However, this does not answer the question about the city where MedAxis is located as it was acquired and no longer exists independently.\n\n3. The question asks for the city where the company acquired by Willow Health is based. Since we know that Willow Health acquired MedAxis (which was based in Antwerp), but MedAxis no longer exists as an independent entity, we cannot definitively answer this question from the provided context.",
+      "before_contexts": [
+        "Willow Health is a digital health company headquartered in Brussels. It was founded in 2010 by Tariq Mahmood. Its flagship product is WillowCare, which launched in 2014. In 2019, Willow Health acquired MedAxis, a company based in Antwerp.",
+        "In 2019, Willow Health acquired MedAxis. MedAxis was based in Antwerp.",
+        "Veridian Robotics is headquartered in Zurich. Willow Health is headquartered in Brussels and acquired MedAxis in 2019."
+      ],
+      "after_contexts": [
+        "Willow Health is a digital health company headquartered in Brussels. It was founded in 2010 by Tariq Mahmood. Its flagship product is WillowCare, which launched in 2014. In 2019, Willow Health acquired MedAxis, a company based in Antwerp.",
+        "In 2019, Willow Health acquired MedAxis. MedAxis was based in Antwerp.",
+        "Veridian Robotics is headquartered in Zurich. Willow Health is headquartered in Brussels and acquired MedAxis in 2019."
+      ],
+      "before_scores": {
+        "strict_faithfulness": 0.0,
+        "answer_relevance": 0.4,
+        "retrieval_relevance": 0.6666666666666666,
+        "answer_completeness": 0.5,
+        "context_utilization": 0.0,
+        "coherence": 1.0,
+        "clarity": 1.0
+      },
+      "after_scores": {
+        "strict_faithfulness": 0.6666666666666666,
+        "answer_relevance": 0.2,
+        "retrieval_relevance": 0.6666666666666666,
+        "answer_completeness": 1.0,
+        "context_utilization": 0.25,
+        "coherence": 0.4,
+        "clarity": 0.8
+      },
+      "deltas": {
+        "strict_faithfulness": 0.6667,
+        "answer_relevance": -0.2,
+        "retrieval_relevance": 0.0,
+        "answer_completeness": 0.5,
+        "context_utilization": 0.25,
+        "coherence": -0.6,
+        "clarity": -0.2
+      }
+    }
+  ]
+}
