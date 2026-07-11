@@ -3,7 +3,11 @@
 Rectify sits downstream of your RAG evaluator. It takes per-case evaluation results, groups failures by root cause into named repair slices, proposes config-level fixes, lets you approve and edit them, reruns only the broken cases, and shows a verified before/after delta report.
 
 ---
+## Interface Screenshots
 
+Selected screenshots of the Streamlit interface are available in the [`Streamlit_screenshots/`](Streamlit_screenshots/) folder.
+
+---
 ## Why Rectify?
 
 Most RAG evaluation tools tell you *what score a case got*. They do not tell you:
@@ -137,9 +141,6 @@ evals/
 ```
 
 ---
-## Interface Screenshots
-
-Selected screenshots of the Streamlit interface are available in the [`Streamlit_screenshots/`](Streamlit_screenshots/) folder.
 
 ## Optional: LLM Explanations
 
