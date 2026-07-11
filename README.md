@@ -2,6 +2,17 @@
 
 Rectify sits downstream of your RAG evaluator. It takes per-case evaluation results, groups failures by root cause into named repair slices, proposes config-level fixes, lets you approve and edit them, reruns only the broken cases, and shows a verified before/after delta report.
 
+## Quick Start
+
+```bash
+git clone git@github.com:KeerthanaMurugaraj/Rectify-An-Interactive-Workbench-for-Post-Evaluation-RAG-Repair-and-Verification.git
+cd Rectify
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
+
+Three sample eval files are included in `evals/` — load any of them from the **Upload / Load** tab to explore the full workflow instantly with no setup.
+
 ---
 ## Interface Screenshots
 
@@ -65,16 +76,6 @@ Before/after delta report
 
 **Secondary family detection** — when two families co-fire, Rectify generates a compound repair card that patches both layers at once.
 
-## Quick Start
-
-```bash
-git clone git@github.com:KeerthanaMurugaraj/Rectify-An-Interactive-Workbench-for-Post-Evaluation-RAG-Repair-and-Verification.git
-cd Rectify
-pip install -r requirements.txt
-streamlit run streamlit_app.py
-```
-
-Three sample eval files are included in `evals/` — load any of them from the **Upload / Load** tab to explore the full workflow instantly with no setup.
 
 ## App Tabs
 
