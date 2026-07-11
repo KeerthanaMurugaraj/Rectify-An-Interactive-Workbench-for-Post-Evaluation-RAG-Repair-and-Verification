@@ -137,6 +137,9 @@ evals/
 ```
 
 ---
+## Interface Screenshots
+
+Selected screenshots of the Streamlit interface are available in the [`Streamlit_screenshots/`](Streamlit_screenshots/) folder.
 
 ## Optional: LLM Explanations
 

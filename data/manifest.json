@@ -1,22 +1,24 @@
 {
-  "name": "rectify_synthetic_data_pack_v1",
+  "name": "rectify_synthetic_data",
   "files": [
     "corpus.jsonl",
     "questions_100.jsonl",
-    "synthetic_failure_cases_30.jsonl",
-    "dataset_schema.md",
-    "synthetic_corpus_plan_100q.md",
-    "README_for_code_assistant.md"
+    "dataset_schema.md"
   ],
   "num_documents": 30,
   "num_questions": 100,
-  "num_synthetic_failure_cases": 30,
   "question_type_distribution": {
     "factoid": 25,
     "multi_part": 20,
-    "multi_hop": 20,
-    "temporal": 15,
+    "multi_hop": 16,
+    "multi_hop_unanswerable": 4,
+    "temporal": 13,
+    "temporal_unanswerable": 2,
     "comparison": 10,
     "unanswerable": 10
+  },
+  "answerability": {
+    "answerable": 84,
+    "unanswerable": 16
   }
 }
