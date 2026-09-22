@@ -159,3 +159,7 @@ Without a key, the button falls back to a deterministic summary. The explanation
 - **Config patches only** — repairs are parameter changes, never code mutations
 - **Developer at the decision point** — no repair is applied without explicit approval
 - **Provenance as a first-class output** — every decision is logged with who, when, and measured effect
+
+## LICENSE
+
+This project is released under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
